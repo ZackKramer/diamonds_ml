@@ -43,6 +43,7 @@ with st.sidebar.form("user_feature_input",):
         st.header("Sample Data Format for Upload")
         st.dataframe(default_df.head())
         st.write("Ensure your uploaded file has the same column names and data types as shown above.")
+        submit_button = st.form_submit_button("Submit CSV")
     with st.expander("Option 2: Fill Out Form"):
         st.header("Enter the diamond details manually using the form below.")
         cut = st.selectbox('Cut Quality', 
