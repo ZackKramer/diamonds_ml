@@ -8,6 +8,9 @@ import warnings
 warnings.filterwarnings('ignore')
 from matplotlib import pyplot as plt 
 
+password_guess = st.text_input("What is the Password?")
+if password_guess != st.secrets["password"]:
+    st.stop()
 
 # Set up the app title and image
 st.title('Diamond Price Predictor')
